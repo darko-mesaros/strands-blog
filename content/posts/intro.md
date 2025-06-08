@@ -52,7 +52,7 @@ We started building Strands Agents to remove this complexity for our teams in Q 
 
 The simplest definition of an agent is a combination of three things: 1) a model, 2) tools, and 3) a prompt. The agent uses these three components to complete a task, often autonomously. The agent’s task could be to answer a question, generate code, plan a vacation, or optimize your financial portfolio. In a model-driven approach, the agent uses the model to dynamically direct its own steps and to use tools in order to accomplish the specified task.
 
-![agent definition diagram](./images/prompt-diagram.png)
+![agent definition diagram](../images/prompt-diagram.png)
 
 To define an agent with the Strands Agents SDK, you define these three components in code:
 
