@@ -24,9 +24,9 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/stra_tut_part3_header.webp" # image path/url
+    image: "stra_tut_part3_header.webp" # image path/url
     alt: "header image" # alt text
-    relative: false  # when using page bundles set this to true
+    relative: true  # when using page bundles set this to true
     hidden: true # only hide on current single page
 
 ---

@@ -25,10 +25,10 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/intro_header.png" # image path/url
-    alt: "<alt text>" # alt text
+    image: "intro_header.png" # image path/url
+    alt: "header image" # alt text
     caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
+    relative: true # when using page bundles set this to true
     hidden: true # only hide on current single page
 ---
 
@@ -52,7 +52,7 @@ We started building Strands Agents to remove this complexity for our teams in Q 
 
 The simplest definition of an agent is a combination of three things: 1) a model, 2) tools, and 3) a prompt. The agent uses these three components to complete a task, often autonomously. The agent’s task could be to answer a question, generate code, plan a vacation, or optimize your financial portfolio. In a model-driven approach, the agent uses the model to dynamically direct its own steps and to use tools in order to accomplish the specified task.
 
-![agent definition diagram](../../images/prompt-diagram.png)
+![agent definition diagram](prompt-diagram.png)
 
 To define an agent with the Strands Agents SDK, you define these three components in code:
 
@@ -62,7 +62,7 @@ To define an agent with the Strands Agents SDK, you define these three component
 
 An agent interacts with its model and tools in a loop until it completes the task provided by the prompt. This agentic loop is at the core of Strands’ capabilities. The Strands agentic loop takes full advantage of how powerful LLMs have become and how well they can natively reason, plan, and select tools. In each loop, Strands invokes the LLM with the prompt and agent context, along with a description of your agent’s tools. The LLM can choose to respond in natural language for the agent’s end user, plan out a series of steps, reflect on the agent’s previous steps, and/or select one or more tools to use. When the LLM selects a tool, Strands takes care of executing the tool and providing the result back to the LLM. When the LLM completes its task, Strands returns the agent’s final result.
 
-![Strands agentic loop](images/agentic-loop.png)
+![Strands agentic loop](agentic-loop.png)
 
 In Strands’ model-driven approach, tools are key to how you customize the behavior of your agents. For example, tools can retrieve relevant documents from a knowledge base, call APIs, run Python logic, or just simply return a static string that contains additional model instructions. Tools also help you achieve complex use cases in a model-driven approach, such as with these Strands Agents example pre-built tools:
 
@@ -156,19 +156,19 @@ Running agents in production is a key tenet for the design of Strands. The Stran
 
 The following diagram shows an agent architecture with Strands running entirely locally in a user’s environment through a client application. The [example command line tool](https://github.com/strands-agents/agent-builder) on GitHub follows this architecture for a CLI-based AI assistant for building agents.
 
-![Agent architecture diagram](images/production-architectures-1.png)
+![Agent architecture diagram](production-architectures-1.png)
 
 The next diagram shows an architecture where the agent and its tools are deployed behind an API in production. We have provided reference implementations on GitHub for how to deploy agents built with the Strands Agents SDK behind an API on AWS, using [AWS Lambda](https://strandsagents.com/0.1.x/user-guide/deploy/deploy_to_aws_lambda/), [AWS Fargate](https://strandsagents.com/0.1.x/user-guide/deploy/deploy_to_aws_fargate/), or [Amazon Elastic Compute Cloud (Amazon EC2)](https://strandsagents.com/0.1.x/user-guide/deploy/deploy_to_amazon_ec2/).
 
-![Run agent behind an API diagram](images/production-architectures-2.png)
+![Run agent behind an API diagram](production-architectures-2.png)
 
 You can separate concerns between the Strands agentic loop and tool execution by running them in separate environments. The following diagram shows an agent architecture with Strands where the agent invokes its tools via API, and the tools run in an isolated backend environment separate from the agent’s environment. For example, you could run your agent’s tools in Lambda functions, while running the agent itself in a Fargate container.
 
-![Run tools in isolated backend environment](images/production-architectures-3.png)
+![Run tools in isolated backend environment](production-architectures-3.png)
 
 You can also implement a return-of-control pattern with Strands, where the client is responsible for running tools. This diagram shows an agent architecture where an agent built with the Strands Agents SDK can use a mix of tools that are hosted in a backend environment and tools that run locally through a client application that invokes the agent.
 
-![Run a mix of tools](images/production-architectures-4.png)
+![Run a mix of tools](production-architectures-4.png)
 
 Regardless of your exact architecture, observability of your agents is important for understanding how your agents are performing in production. Strands provides instrumentation for collecting agent trajectories and metrics from production agents. Strands uses OpenTelemetry (OTEL) to emit telemetry data to any OTEL-compatible backend for visualization, troubleshooting, and evaluation. Strands’ support for distributed tracing enables you to track requests through different components in your architecture, in order to paint a complete picture of agent sessions.
 
