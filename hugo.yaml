@@ -8,8 +8,8 @@ caches:
 
 # ----
 theme: ["PaperMod"]
-# pagination:
-#   pagerSize: 5
+pagination:
+  pagerSize: 5
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -58,7 +58,7 @@ params:
     safari_pinned_tab: "favicon.svg"
 
   label:
-    text: "Strands Blog"
+    text: "Strands Agents Blog"
     icon: favicon.svg
     iconHeight: 35
 
