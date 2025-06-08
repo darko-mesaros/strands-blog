@@ -65,7 +65,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "What is Strands Agents? 🤔"
+    Title: "Welcome to Strands Agents Blog 🧬"
     Content: |
           **Strands Agents** is a lightweight, code-first framework designed for building AI agents with Python. The SDK offers a simple-to-use approach that gets out of your way while providing production-ready capabilities including full observability, tracing, and deployment options for running agents at scale.
 
