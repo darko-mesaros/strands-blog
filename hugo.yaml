@@ -2,6 +2,10 @@ baseURL: https://blog.strandsagents.com/
 languageCode: en-us
 title: Strands Agents Blog
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 # ----
 theme: ["PaperMod"]
 # pagination:
