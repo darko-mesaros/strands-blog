@@ -10,6 +10,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
+summary: "Create your first AI agent with just a few lines of code using the Strands Agents SDK and Amazon Bedrock."
 description: "Create your first AI agent with just a few lines of code using the Strands Agents SDK and Amazon Bedrock."
 canonicalURL: "https://community.aws/content/2xP1AQ52ofPdLawEbDI5EEUhmhH/building-ai-agents-with-strands-part-1-creating-your-first-agent"
 disableHLJS: true # to disable highlightjs

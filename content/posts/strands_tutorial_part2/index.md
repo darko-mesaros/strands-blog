@@ -11,6 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
+summary: "Learn how to connect your AI agent to the real world using built-in and custom tools."
 description: "Learn how to connect your AI agent to the real world using built-in and custom tools."
 canonicalURL: "https://community.aws/content/2xP8NYlAQUN0feRpeq9xqhj0i7u/building-ai-agents-with-strands-part-2-tool-integration"
 disableHLJS: true # to disable highlightjs

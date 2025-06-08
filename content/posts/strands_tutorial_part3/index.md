@@ -10,6 +10,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
+summary: "Learn how to build and integrate MCP servers with the Strands Agents SDK. Connect your AI agents to external tools and services using the Model Context Protocol."
 description: "Learn how to build and integrate MCP servers with the Strands Agents SDK. Connect your AI agents to external tools and services using the Model Context Protocol."
 canonicalURL: "https://community.aws/content/2xSxbxfYzWnaE7eBfvFsKQ62hcv/building-ai-agents-with-strands-part-3-mcp-integration"
 disableHLJS: true # to disable highlightjs

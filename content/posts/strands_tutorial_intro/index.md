@@ -10,6 +10,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
+summary: "Follow this hands-on journey and learn how to build AI agents using the open source Strands Agents SDK."
 description: "Follow this hands-on journey and learn how to build AI agents using the open source Strands Agents SDK."
 canonicalURL: "https://community.aws/content/2xOwSRPn2OwV2nj6ZYyTxn6P7gH/building-ai-agents-with-strands-an-introduction-to-the-series"
 disableHLJS: true # to disable highlightjs

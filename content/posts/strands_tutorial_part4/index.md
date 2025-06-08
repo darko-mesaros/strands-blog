@@ -10,6 +10,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
+summary: "Learn how to use different AI models with the Strands Agents SDK, including models from Amazon Bedrock and OpenAI, as well as local models with Ollama."
 description: "Learn how to use different AI models with the Strands Agents SDK, including models from Amazon Bedrock and OpenAI, as well as local models with Ollama."
 canonicalURL: "https://community.aws/content/2xT246v0TpKQhlPjCCBcROjKvtp/building-ai-agents-with-strands-part-4-alternative-model-providers"
 disableHLJS: true # to disable highlightjs
