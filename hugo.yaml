@@ -1,0 +1,148 @@
+baseURL: https://blog.strandsagents.com/
+languageCode: en-us
+title: Strands Agents Blog
+
+# ----
+theme: ["PaperMod"]
+# pagination:
+#   pagerSize: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Strands Agents Blog
+  description: "Blog for Strand Agents"
+  keywords: [Blog, Strands, Agents, AWS]
+  author: AWS Developer Experience
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "favicon.svg"
+    favicon16x16: "favicon.svg"
+    favicon32x32: "favicon.svg"
+    apple_touch_icon: "favicon.svg"
+    safari_pinned_tab: "favicon.svg"
+
+  label:
+    text: "Strands Blog"
+    icon: favicon.svg
+    iconHeight: 35
+
+
+  # home-info mode
+  homeInfoParams:
+    Title: "What is Strands Agents? 🤔"
+    Content: |
+          **Strands Agents** is a lightweight, code-first framework designed for building AI agents with Python. The SDK offers a simple-to-use approach that gets out of your way while providing production-ready capabilities including full observability, tracing, and deployment options for running agents at scale.
+
+          --- 
+          Key features include:
+            1. 🧠 Support for multiple model providers and deployment targets
+            2. 🔧 Powerful built-in tools for quick development
+            3. 👥 Multi-agent and autonomous agent capabilities
+            4. 💬 Flexible support for both conversational and non-conversational agents with streaming options.
+
+          The framework prioritizes safety and security while remaining model, provider, and deployment agnostic, making it suitable for various AI system implementations from simple question-answering agents to complex autonomous systems that can improve themselves over time.  Currently available in public preview, Strands Agents welcomes community feedback and contributions to help shape its development.
+
+          ---
+
+          To get started just run:
+
+          ```
+            pip install strands-agents
+          ```
+
+          In this blog, you will find content that can get you started on your Strands Agents adventure. 🚀
+
+  #
+  # socialIcons:
+  #   - name: x
+  #     url: "https://x.com/"
+  #   - name: stackoverflow
+  #     url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: docs
+      name: docs
+      url: https://strandsagents.com/latest
+      weight: 10
+    - identifier: github
+      name: github repo
+      url: https://github.com/strands-agents/sdk-python
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    lineNos: true
+    # style: monokai
